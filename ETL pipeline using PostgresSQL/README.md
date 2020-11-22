@@ -1,4 +1,4 @@
-# Purpose of this project
+# Project
 
 The purpose of this project is to analyse user activity on a music streaming app, the data used is stored in a direcotry of JSON logs and a directory with JSON metadata on the songs in the app. The purpose of this project is to enable easier analysis of the data. To do so we must create a Relational Database Schema, and then configure an ETL process that would ultimately load the data into this schema.
 
@@ -37,6 +37,9 @@ The purpose of this database is to more easily perform queries, the ability to d
 
 The star schema allows for faster query performance, with the fact table containing information on each song played on the music streaming app and other information pertaining to that song-play from the dimension tables such as user id and location of the user. In other words the Star schema provides an easier mechanism to query User behavior.
 
+* Fact table: songplays
+* Dimension tables: users, songs, artists and time
+
 The ETL pipeline is neccessary to:
 
 - extract all the relevant metadata on the songs available on the music streaming 
@@ -44,8 +47,6 @@ The ETL pipeline is neccessary to:
 - transform the data such as data in the time table
 - load this data into the schema for easy analysis
 
-* Fact table: songplays
-* Dimension tables: users, songs, artists and time
 
 
 
