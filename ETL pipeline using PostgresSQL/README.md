@@ -1,12 +1,13 @@
 # Purpose of this project
 
-Sparkify would like to analyze the user activity on their music streaming app, the data they would like to query is stored in a direcotry of JSON logs and a directory with JSON metadata on the songs in their app. The purpose of this project is to enable easier analysis of the data. To do so we must create a Relational Database Schema, and then configure an ETL process that would ultimately load the data into this schema.
+The purpose of this project is to analyse user activity on a music streaming app, the data used is stored in a direcotry of JSON logs and a directory with JSON metadata on the songs in the app. The purpose of this project is to enable easier analysis of the data. To do so we must create a Relational Database Schema, and then configure an ETL process that would ultimately load the data into this schema.
 
 # Files 
-1. data: JSON files of songs and logs
-2. create_tables.py: Python script that creates the tables
-3. sql_queries.py: Python script that contains Sql statements that builds the tables, required by create_tables.py and etl.py
-4. etl.py: Python script that extracts, transforms and loads data into tables
+1. data: Folder containing JSON files of songs and log data
+2. create_tables.py: Python script to perform SQL-Statements for (re-)creating database and tables
+3. sql_queries.py: Python script containing SQL-Statements used by create_tables.py and etl.py
+4. etl.py: Python script to extract the needed information from Song and Log data inside the data folder and parsing/inserting them to the created database schema and tables
+5. test.ipynb: Displays the first few rows of each table to let you check your database
 
 # Purpose of this database
 
