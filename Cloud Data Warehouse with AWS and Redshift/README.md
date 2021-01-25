@@ -23,7 +23,7 @@ The first dataset is a subset of real data from the Million Song Dataset. Each f
 6. Get the Value of Endpoint and Role for put into main configuration file
 7. Authorize Security Access Group to Default TCP/IP Address
 8. Launch database connectivity configuration
-9. Go to Terminal write the command "python create_tables.py" and then "etl.py"
+9. Run "python create_tables.py" and then "etl.py"
 
 To create the database tables and run the ETL pipeline, you must run the following two files in the order that they are listed below
 
